@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [
+      "title",
+      "companyHandle"
+  ],
+  "additionalProperties": false,
+  "properties": {
+      "title": {
+          "type": "string",
+          "examples": [
+              "Software Engineer"
+          ]
+      },
+      "salary": {
+          "type": "integer",
+          "minimum": 0,
+          "examples": [
+              105000
+          ]
+      },
+      "equity": {
+          "type": "number",
+          "maximum": 1.0,
+          "examples": [
+              0.123
+          ]
+      },
+      "companyHandle": {
+          "type": "string",
+          "examples": [
+              "tesla"
+          ]
+      }
+  },
+  "examples": [{
+      "title": "Software Engineer",
+      "salary": 105000,
+      "equity": 0.123,
+      "companyHandle": "tesla"
+  }]
+}

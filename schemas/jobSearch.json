@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "required": [],
+  "additionalProperties": false,
+  "properties": {
+      "titleLike": {
+          "type": "string",
+          "examples": [
+              "Software"
+          ]
+      },
+      "minSalary": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "examples": [
+              "105000"
+          ]
+      },
+      "hasEquity": {
+          "type": "string",
+          "pattern": "^(true|false)$",
+          "examples": [
+              false
+          ]
+      }
+  },
+  "examples": [{
+      "titleLike": "Software",
+      "minSalary": "105000",
+      "hasEquity": "false"
+  }]
+}

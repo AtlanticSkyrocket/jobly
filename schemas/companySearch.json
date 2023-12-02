@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+      "nameLike": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 30,
+          "examples": [
+              "John Doe"
+          ]
+      },
+      "minEmployees": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "examples": [
+              "1"
+          ]
+      },
+      "maxEmployees": {
+          "type": "string",
+          "pattern": "^[0-9]+$",
+          "examples": [
+              "20000"
+          ]
+      }
+  },
+  "examples": [{
+      "name": "John Doe",
+      "minEmployees": 1,
+      "maxEmployees": 20000
+  }]
+}
